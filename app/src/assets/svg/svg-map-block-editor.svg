@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Main block editor -->
+
+    <symbol id="menu-dots" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="1"></circle><circle cx="8" cy="4" r="1"></circle><circle cx="8" cy="20" r="1"></circle><circle cx="16" cy="12" r="1"></circle><circle cx="16" cy="4" r="1"></circle><circle cx="16" cy="20" r="1"></circle>
+    </symbol>
+
+    <symbol id="add" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>
+    </symbol>
+
+    <symbol id="headings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"></path><path d="M6 20V4"></path><path d="M18 20V4"></path>
+    </symbol>
+
+    <symbol id="image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+    </symbol>
+
+    <symbol id="gallery" viewBox="0 0 34 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="18" height="18" rx="2" transform="translate(3 3)"/><circle cx="2" cy="2" r="2" transform="translate(7 7)"/><path d="M21,15l-3.086-3.086a2,2,0,0,0-2.828,0L6,21"/><path d="M0,18" transform="translate(26 3)"/><path d="M3,21a2,2,0,0,0,2-2V5A2,2,0,0,0,3,3" transform="translate(21)"/><path d="M3,21a2,2,0,0,0,2-2V5A2,2,0,0,0,3,3" transform="translate(26)"/>
+    </symbol>
+
+    <symbol id="unordered-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>
+    </symbol>
+
+    <symbol id="quote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+    </symbol>
+
+    <symbol id="code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"></path><path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"></path>
+    </symbol>
+
+    <symbol id="table" viewBox="0 0 18 14">
+        <path d="M15,0H3A3,3,0,0,0,0,3v8a3,3,0,0,0,3,3H15a3,3,0,0,0,3-3V3A3,3,0,0,0,15,0Zm0,2a1,1,0,0,1,1,1V6H10V2ZM2,3A1,1,0,0,1,3,2H8V6H2Zm1,9a1,1,0,0,1-1-1V8H8v4Zm12,0H10V8h6v3A1,1,0,0,1,15,12Z" />
+    </symbol>
+
+    <symbol id="html" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+    </symbol>
+
+    <symbol id="separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="1"></circle><line x1="5" y1="12" x2="19" y2="12"></line><circle cx="12" cy="18" r="1"></circle>
+    </symbol>
+
+    <symbol id="readmore" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3"></path><path d="M21 16v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3"></path><path d="M4 12H2"></path><path d="M10 12H8"></path><path d="M16 12h-2"></path><path d="M22 12h-2"></path>
+    </symbol>
+
+    <symbol id="video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"></path><rect x="2" y="6" width="14" height="12" rx="2" ry="2"></rect>
+    </symbol>
+
+    <symbol id="toc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h13l4-3.5L18 6Z"></path><path d="M12 13v8"></path><path d="M12 3v3"></path>
+    </symbol>
+
+    <symbol id="tab" viewBox="0 0 9 5">
+        <path d="M7.4,2.5a.29.29,0,0,1,0,.09.18.18,0,0,1,0,.1l0,.07-.06.09-2,2A.51.51,0,0,1,4.93,5a.52.52,0,0,1-.35-.14.5.5,0,0,1,0-.71L5.71,3H.5a.5.5,0,0,1,0-1H5.71L4.57.85a.5.5,0,0,1,.72-.7l2,2,.06.09a.43.43,0,0,0,0,.07.18.18,0,0,1,0,.1A.29.29,0,0,1,7.4,2.5ZM8.5,0A.5.5,0,0,0,8,.5v4a.5.5,0,0,0,1,0V.5A.5.5,0,0,0,8.5,0Z" />
+    </symbol>
+
+
+    <!-- Inline editor: paragraph -->
+
+    <symbol id="bold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>
+    </symbol>
+
+    <symbol id="italic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="4" x2="10" y2="4"></line><line x1="14" y1="20" x2="5" y2="20"></line><line x1="15" y1="4" x2="9" y2="20"></line>
+    </symbol>
+
+    <symbol id="underline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v6a6 6 0 0 0 12 0V4"></path><line x1="4" y1="20" x2="20" y2="20"></line>
+    </symbol>
+
+    <symbol id="strikethrough" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4H9a3 3 0 0 0-2.83 4"></path><path d="M14 12a4 4 0 0 1 0 8H6"></path><line x1="4" y1="12" x2="20" y2="12"></line>
+    </symbol>
+
+    <symbol id="link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </symbol>
+
+    <symbol id="unlink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18.84 12.25 1.72-1.71h-.02a5.004 5.004 0 0 0-.12-7.07 5.006 5.006 0 0 0-6.95 0l-1.72 1.71"></path><path d="m5.17 11.75-1.71 1.71a5.004 5.004 0 0 0 .12 7.07 5.006 5.006 0 0 0 6.95 0l1.71-1.71"></path><line x1="8" y1="2" x2="8" y2="5"></line><line x1="2" y1="8" x2="5" y2="8"></line><line x1="16" y1="19" x2="16" y2="22"></line><line x1="19" y1="16" x2="22" y2="16"></line>
+    </symbol>
+
+    <symbol id="marker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11-6 6v3h9l3-3"></path><path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"></path>
+    </symbol>
+
+    <symbol id="align-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="6" x2="3" y2="6"></line><line x1="15" y1="12" x2="3" y2="12"></line><line x1="17" y1="18" x2="3" y2="18"></line>
+    </symbol>
+
+    <symbol id="align-center" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="6" x2="3" y2="6"></line><line x1="17" y1="12" x2="7" y2="12"></line><line x1="19" y1="18" x2="5" y2="18"></line>
+    </symbol>
+
+    <symbol id="align-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="12" x2="9" y2="12"></line><line x1="21" y1="18" x2="7" y2="18"></line>
+    </symbol>
+    
+    <!-- Inline editor: paragraph -->
+
+    <symbol id="paragraph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4v16"></path><path d="M17 4v16"></path><path d="M19 4H9.5a4.5 4.5 0 0 0 0 9H13"></path>
+    </symbol>
+
+
+    <!-- Inline editor: headings H1-H6 -->
+
+    <symbol id="h1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h8"></path><path d="M4 18V6"></path><path d="M12 18V6"></path><path d="m17 12 3-2v8"></path>
+    </symbol>
+
+    <symbol id="h2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h8"></path><path d="M4 18V6"></path><path d="M12 18V6"></path><path d="M21 18h-4c0-4 4-3 4-6 0-1.5-2-2.5-4-1"></path>
+    </symbol>
+
+    <symbol id="h3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h8"></path><path d="M4 18V6"></path><path d="M12 18V6"></path><path d="M17.5 10.5c1.7-1 3.5 0 3.5 1.5a2 2 0 0 1-2 2"></path><path d="M17 17.5c2 1.5 4 .3 4-1.5a2 2 0 0 0-2-2"></path>
+    </symbol>
+
+    <symbol id="h4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h8"></path><path d="M4 18V6"></path><path d="M12 18V6"></path><path d="M17 10v4h4"></path><path d="M21 10v8"></path>
+    </symbol>
+
+    <symbol id="h5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h8"></path><path d="M4 18V6"></path><path d="M12 18V6"></path><path d="M17 13v-3h4"></path><path d="M17 17.7c.4.2.8.3 1.3.3 1.5 0 2.7-1.1 2.7-2.5S19.8 13 18.3 13H17"></path>
+    </symbol>
+
+    <symbol id="h6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h8"></path><path d="M4 18V6"></path><path d="M12 18V6"></path><circle cx="19" cy="16" r="2"></circle><path d="M20 10c-2 2-3 3.5-3 6"></path>
+    </symbol>
+
+
+    <!-- Inline editor: lists -->
+
+    <symbol id="ordered-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" y1="6" x2="21" y2="6"></line><line x1="10" y1="12" x2="21" y2="12"></line><line x1="10" y1="18" x2="21" y2="18"></line><path d="M4 6h1v4"></path><path d="M4 10h2"></path><path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"></path>
+    </symbol>
+
+    <symbol id="nesting" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="8" y1="6" x2="14" y2="6"/><line x1="8" y1="12" x2="21.005" y2="12"/><line x1="8" y1="18" x2="14" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/><path d="m18.005,15l3-3-3-3"/>
+    </symbol>
+
+    <symbol id="flattening" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="21.005" y1="18" x2="15.005" y2="18"/><line x1="17.005" y1="12" x2="4" y2="12"/><line x1="21.005" y1="6" x2="15.005" y2="6"/><line x1="11.005" y1="18" x2="10.995" y2="18"/><line x1="21.005" y1="12" x2="20.995" y2="12"/><line x1="11.005" y1="6" x2="10.995" y2="6"/><path d="m6,9l-3,3,3,3"/>
+    </symbol>
+
+
+    <!-- Inline editor: separators -->
+
+    <symbol id="long-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+       <line x1="1" y1="12" x2="23" y2="12"></line>
+    </symbol>
+
+    <symbol id="dotted-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+     <circle cx="2" cy="12" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="22" cy="12" r="1"></circle>
+    </symbol>
+
+    <symbol id="dot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="1"></circle>
+    </symbol>
+
+
+    <!-- Inline editor: image, video, embed -->
+    
+    <symbol id="preview" viewBox="0 0 19 12">
+        <path d="M19,6l-.3.5A14.93,14.93,0,0,1,15,10.3L12.7,8a4.55,4.55,0,0,0,.5-2A3.88,3.88,0,0,0,9.4,2.1,3.82,3.82,0,0,0,5.6,6,3.82,3.82,0,0,0,9.4,9.9,3.41,3.41,0,0,0,11.8,9l1.9,1.9A8.77,8.77,0,0,1,9.5,12C6,12,2.8,10,.3,6.5L0,6l.3-.5C2.8,2,6,0,9.5,0s6.7,2,9.2,5.5ZM7.5,6a2,2,0,1,0,2-2A2,2,0,0,0,7.5,6Z"/>
+    </symbol>
+
+    <symbol id="left" viewBox="0 0 14 13">
+        <path d="M0,1A1,1,0,0,1,1,0H13a1,1,0,0,1,0,2H1A1,1,0,0,1,0,1ZM1,9H6A1,1,0,0,0,7,8V5A1,1,0,0,0,6,4H1A1,1,0,0,0,0,5V8A1,1,0,0,0,1,9ZM13,4H12a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm0,3H12a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm0,4H1a1,1,0,0,0,0,2H13a1,1,0,0,0,0-2Z" />
+    </symbol>
+
+    <symbol id="center" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="10" height="6" rx="2"></rect><path d="M22 20H2"></path><path d="M22 4H2"></path>
+    </symbol>
+
+    <symbol id="right" viewBox="0 0 14 13">
+        <path d="M13,2H1A1,1,0,0,1,1,0H13a1,1,0,0,1,0,2Zm1,6V5a1,1,0,0,0-1-1H8A1,1,0,0,0,7,5V8A1,1,0,0,0,8,9h5A1,1,0,0,0,14,8ZM0,5A1,1,0,0,0,1,6H2A1,1,0,0,0,2,4H1A1,1,0,0,0,0,5ZM0,8A1,1,0,0,0,1,9H2A1,1,0,0,0,2,7H1A1,1,0,0,0,0,8Zm0,4a1,1,0,0,0,1,1H13a1,1,0,0,0,0-2H1A1,1,0,0,0,0,12Z" />
+    </symbol>
+
+    <symbol id="wide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="6" rx="2"></rect><path d="M16 20H8"></path><path d="M16 4H8"></path>
+    </symbol>
+
+    <symbol id="full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+     <rect x="2" y="4" width="20" height="11" rx="2"></rect><path d="M16 20H8"></path>
+    </symbol>
+    
+    <symbol id="blank-image" viewBox="0 0 180 148"><path d="M141,123.74a1,1,0,0,1-.21-2,5,5,0,0,0,3.85-5.94,1,1,0,0,1,2-.42,7,7,0,0,1-5.4,8.32A.69.69,0,0,1,141,123.74ZM44.63,144.28l12.07-2.57a1,1,0,1,0-.41-2l-12.08,2.57a1,1,0,0,0,.21,2Zm24.15-5.14,12.07-2.57a1,1,0,0,0-.42-2l-12.07,2.57a1,1,0,0,0,.21,2ZM92.92,134,105,131.42a1,1,0,1,0-.42-2L92.51,132a1,1,0,0,0,.2,2Zm24.15-5.14,12.07-2.57a1,1,0,0,0-.41-2l-12.08,2.57a1,1,0,0,0,.21,2A.76.76,0,0,0,117.07,128.85Zm-84.51,18a1,1,0,0,0-.42-2A5,5,0,0,1,26.21,141l-2,.42A7,7,0,0,0,31.1,147,7.31,7.31,0,0,0,32.56,146.85Zm-9.69-16.73a1,1,0,0,0,.77-1.19l-2.57-12.09a1,1,0,0,0-1.18-.77,1,1,0,0,0-.77,1.19l2.56,12.09a1,1,0,0,0,1,.79A.75.75,0,0,0,22.87,130.12Zm-5.13-24.18a1,1,0,0,0,.77-1.19l-2.57-12.1a1,1,0,0,0-1.18-.77A1,1,0,0,0,14,93.07l2.57,12.09a1,1,0,0,0,1,.8ZM12.61,81.75a1,1,0,0,0,.77-1.19L10.81,68.47a1,1,0,1,0-2,.42L11.42,81a1,1,0,0,0,1,.79A.75.75,0,0,0,12.61,81.75ZM7.47,57.57a1,1,0,0,0,.77-1.19L5.68,44.28a1,1,0,1,0-2,.42L6.29,56.79a1,1,0,0,0,1,.8ZM2.34,33.38a1,1,0,0,0,.77-1.19A5,5,0,0,1,7,26.25a1,1,0,0,0-.42-2,7,7,0,0,0-5.4,8.32,1,1,0,0,0,1,.79A.75.75,0,0,0,2.34,33.38ZM19,23.68l12.07-2.57a1,1,0,0,0,.77-1.19,1,1,0,0,0-1.18-.77L18.62,21.72a1,1,0,0,0,.21,2Zm24.14-5.14L55.26,16a1,1,0,0,0-.42-2L42.77,16.58a1,1,0,0,0,.21,2ZM67.33,13.4,79.4,10.83a1,1,0,0,0,.77-1.19A1,1,0,0,0,79,8.87L66.91,11.44a1,1,0,0,0,.21,2ZM91.48,8.26l12.07-2.57a1,1,0,1,0-.42-2L91.06,6.3a1,1,0,0,0-.77,1.18,1,1,0,0,0,1,.8Zm31.26-.51a1,1,0,0,0,.78-1.19,7,7,0,0,0-8.31-5.41,1,1,0,0,0,.41,2A5,5,0,0,1,121.56,7a1,1,0,0,0,1,.79Zm20.53,96.74a1,1,0,0,0,.78-1.19l-2.57-12.09a1,1,0,1,0-2,.41l2.57,12.09a1,1,0,0,0,1,.8ZM138.14,80.3a1,1,0,0,0,.77-1.19L136.35,67a1,1,0,1,0-2,.42L137,79.53a1,1,0,0,0,1,.79A.75.75,0,0,0,138.14,80.3ZM133,56.12a1,1,0,0,0,.77-1.19l-2.57-12.09a1,1,0,1,0-2,.41l2.56,12.1a1,1,0,0,0,1,.79Zm-5.13-24.19a1,1,0,0,0,.77-1.19l-2.57-12.09a1,1,0,0,0-2,.42l2.57,12.09a1,1,0,0,0,1,.79A.75.75,0,0,0,127.88,31.93ZM55.79,111.67,105.71,101a7.52,7.52,0,0,0,5.78-8.91l-10.61-50A7.5,7.5,0,0,0,92,36.33L42.05,47a7.53,7.53,0,0,0-5.78,8.92l10.61,50a7.54,7.54,0,0,0,7.33,6A7.79,7.79,0,0,0,55.79,111.67ZM96,39.9a4.49,4.49,0,0,1,2,2.85l10.62,50a4.52,4.52,0,0,1-3.47,5.35L55.16,108.73a4.5,4.5,0,0,1-5.34-3.48l-10.61-50a4.52,4.52,0,0,1,3.47-5.35L92.6,39.27a4.38,4.38,0,0,1,1-.1A4.47,4.47,0,0,1,96,39.9Zm3.7,46.25c-1.94-4.9-8.2-11.82-11.82-11.79-2,0-5,4.39-7.11,8.83-4.87-6-11.72-12.45-15.69-12.4-4.32.06-11.72,14.79-10.66,23.42.27,2.23,1.56,4.11,3.8,3.62l25.34-5.39h0l14.77-3.15C99.76,89,100.23,87.5,99.69,86.15Zm-13.15-31a7,7,0,1,0,8.31,5.39A7,7,0,0,0,86.54,55.15Zm74.13,54.7a7.06,7.06,0,0,0,3.05-4.6,1,1,0,0,0-.79-1.13,1,1,0,0,0-1.18.82,5.09,5.09,0,0,1-6,4,1,1,0,0,0-.41,2,7.21,7.21,0,0,0,1.45.15A7,7,0,0,0,160.67,109.85Zm5.21-15.35L168,84.06a1,1,0,1,0-2-.39l-2.1,10.44a1,1,0,0,0,.78,1.18l.2,0A1,1,0,0,0,165.88,94.5Zm4.2-20.88,2.09-10.44a1,1,0,1,0-2-.39l-2.1,10.44a1,1,0,0,0,.79,1.18l.2,0A1,1,0,0,0,170.08,73.62Zm4.19-20.88,2.1-10.44a1,1,0,0,0-.79-1.18,1,1,0,0,0-1.18.79l-2.09,10.44a1,1,0,0,0,.78,1.18l.2,0A1,1,0,0,0,174.27,52.74Zm4.59-22.86a7.17,7.17,0,0,0-5.56-8.41,1,1,0,0,0-1.18.78,1,1,0,0,0,.78,1.18,5.17,5.17,0,0,1,4,6.06l0,.08a1,1,0,0,0,.8,1.14l.18,0A1.05,1.05,0,0,0,178.86,29.88Zm-15.37-9.42a1,1,0,0,0-.78-1.19L152.3,17.12a1,1,0,0,0-1.19.78,1,1,0,0,0,.78,1.18l10.41,2.16.21,0A1,1,0,0,0,163.49,20.46Zm-20.83-4.31a1,1,0,0,0-.78-1.18l-10.41-2.16a1,1,0,0,0-.4,2l10.41,2.15.2,0A1,1,0,0,0,142.66,16.15Z"/>
+    </symbol>
+    
+    <symbol id="blank-gallery" viewBox="0 0 280 148"><path d="M87.81,74.36c-2,0-5,4.39-7.11,8.83C75.84,77.24,69,70.74,65,70.79c-4.33.06-11.71,14.79-10.66,23.42.28,2.23,1.57,4.11,3.8,3.62l25.32-5.39h0l14.76-3.15c1.44-.3,1.91-1.79,1.37-3.14C97.68,81.25,91.43,74.33,87.81,74.36Zm1.26-5.66a7,7,0,1,0-8.31-5.4A7,7,0,0,0,89.07,68.7ZM176,73.64a7,7,0,1,0-5.38-8.31A7,7,0,0,0,176,73.64Zm-3.44,4.65c-1.8-.78-6.38,2-10.1,5.18-2-7.41-5.62-16.13-9.27-17.69-1.19-.52-3.19.09-5.45,1.39.35.3,3.35,24.3,3.75,23.76,0,0,9.76,2.12,9.76,2.12h0L176,96.18a2.17,2.17,0,0,0,2.52-2.31C178.77,88.6,175.87,79.73,172.56,78.29ZM274.87,64.82A5.16,5.16,0,0,1,276.05,72l-.05.06a1,1,0,0,0,.27,1.36.51.51,0,0,0,.16.09,1,1,0,0,0,1.25-.36,7.17,7.17,0,0,0-1.64-10,1,1,0,1,0-1.17,1.63Zm-29.41,52a1,1,0,0,0-1.4.24l-6.16,8.68a1,1,0,0,0,.23,1.4l.18.1a1,1,0,0,0,1.22-.34l6.16-8.68A1,1,0,0,0,245.46,116.82Zm24.89-33.35a1,1,0,0,0-.24-1.4,1,1,0,0,0-1.39.24L262.56,91a1,1,0,0,0,.23,1.39.75.75,0,0,0,.17.1,1,1,0,0,0,1.23-.33ZM111.41,92.13a7.52,7.52,0,0,1-5.77,8.91L55.75,111.67a7.72,7.72,0,0,1-1.58.17,7.52,7.52,0,0,1-7.32-6l-10.6-50A7.52,7.52,0,0,1,42,47L91.91,36.33a7.5,7.5,0,0,1,8.9,5.79Zm-2.93.62-10.6-50a4.5,4.5,0,0,0-2-2.85,4.44,4.44,0,0,0-2.44-.73,4.29,4.29,0,0,0-.94.1L42.65,49.9a4.52,4.52,0,0,0-3.47,5.35l10.61,50a4.49,4.49,0,0,0,2,2.85,4.44,4.44,0,0,0,3.38.63L105,98.1A4.52,4.52,0,0,0,108.48,92.75Zm124.43,41.73a1,1,0,0,0-1.41.28,5.08,5.08,0,0,1-7.1,1.19,1,1,0,1,0-1.17,1.63,6.6,6.6,0,0,0,1.26.72,7,7,0,0,0,4,.51,7.14,7.14,0,0,0,4.66-3A1,1,0,0,0,232.91,134.48Zm17.09-90-8.63-6.19a1,1,0,0,0-1.17,1.63l8.63,6.19.18.11a1,1,0,0,0,1-1.74Zm16.27,14.13a1,1,0,0,0,1-1.73l-8.63-6.2a1,1,0,1,0-1.17,1.63l8.63,6.2Zm-8.48,40.83a1,1,0,0,0-1.4.23l-6.16,8.69a1,1,0,0,0,.23,1.4l.17.1a1,1,0,0,0,1.23-.34l6.16-8.69A1,1,0,0,0,257.79,99.45Zm-61.27-51a7.45,7.45,0,0,0-4.73-3.25L141.88,34.66l-.56-.09a15.37,15.37,0,0,0,.93,3.24l48.91,10.35a4.51,4.51,0,0,1,.9.29,4.49,4.49,0,0,1,2.56,5l-10.67,50a4.52,4.52,0,0,1-5.34,3.48l-22.85-4.83c.07.29.16.57.26.86.28.81.61,1.62.86,2.45l21.1,4.46a7.52,7.52,0,0,0,8.9-5.8l10.67-50A7.45,7.45,0,0,0,196.52,48.47ZM80.38,134.6l-12.07,2.57a1,1,0,0,0,.21,2l.21,0,12.06-2.57a1,1,0,0,0-.41-2ZM31.09,21.11,19,23.68l-.21,0a1,1,0,0,1-.21-2l12.06-2.57a1,1,0,1,1,.42,2Zm-10,95.73a1,1,0,0,0-1.19-.77,1,1,0,0,0-.77,1.19l2.57,12.09a1,1,0,0,0,1,.79.78.78,0,0,0,.21,0,1,1,0,0,0,.77-1.19Zm11.06,28A5,5,0,0,1,26.19,141l-2,.42A7,7,0,0,0,31.08,147a7.31,7.31,0,0,0,1.46-.15,1,1,0,0,0-.42-2ZM15.93,92.65a1,1,0,1,0-1.95.42l2.56,12.09a1,1,0,0,0,1,.8l.21,0a1,1,0,0,0,.77-1.19ZM10.8,68.47a1,1,0,0,0-1.18-.77,1,1,0,0,0-.77,1.19L11.41,81a1,1,0,0,0,1,.79.75.75,0,0,0,.21,0,1,1,0,0,0,.77-1.19Zm93.71,61L92.44,132a1,1,0,0,0,.21,2l.21,0,12.06-2.57a1,1,0,0,0-.41-2ZM5.67,44.28a1,1,0,0,0-1.18-.77,1,1,0,0,0-.77,1.19L6.28,56.79a1,1,0,0,0,1,.8l.21,0a1,1,0,0,0,.77-1.19Zm50.58,95.46-12.07,2.57a1,1,0,0,0,.21,2l.21,0,12.07-2.57a1,1,0,0,0-.42-2ZM7,26.25a1,1,0,0,0,.77-1.19,1,1,0,0,0-1.18-.77,7,7,0,0,0-5.4,8.32,1,1,0,0,0,1,.79.75.75,0,0,0,.21,0,1,1,0,0,0,.77-1.19A5,5,0,0,1,7,26.25ZM67.08,13.42l.2,0,12.07-2.57a1,1,0,1,0-.42-2L66.87,11.44a1,1,0,0,0,.21,2ZM43,18.56l.2,0L55.22,16a1,1,0,1,0-.42-2L42.74,16.58a1,1,0,0,0,.21,2ZM91.2,8.28l.21,0,12.07-2.57a1,1,0,0,0,.77-1.19,1,1,0,0,0-1.19-.77L91,6.3a1,1,0,0,0,.2,2Zm39.92,34.56a1,1,0,1,0-2,.41l2.56,12.1a1,1,0,0,0,1,.79l.21,0a1,1,0,0,0,.77-1.19Zm5,24.23a1,1,0,1,0-2,.42l2.56,12.09a1,1,0,0,0,1,.8.76.76,0,0,0,.21,0,1,1,0,0,0,.77-1.19ZM126.6,31.16a1,1,0,0,0,1,.79.75.75,0,0,0,.21,0,1,1,0,0,0,.77-1.19L126,18.65a1,1,0,1,0-1.95.42Zm2,93.16-12.07,2.57a1,1,0,0,0,.21,2,.76.76,0,0,0,.21,0l12.06-2.57a1,1,0,0,0-.41-2Zm17.87-8.93a1,1,0,1,0-2,.42,5,5,0,0,1-3.85,5.94,1,1,0,0,0,.21,2,.76.76,0,0,0,.21,0A7,7,0,0,0,146.51,115.39Zm-31-112.27A5,5,0,0,1,121.47,7a1,1,0,0,0,1,.79l.21,0a1,1,0,0,0,.77-1.19,7,7,0,0,0-8.3-5.41,1,1,0,0,0,.41,2Zm25.73,88.6a1,1,0,0,0-2,.41l2.56,12.1a1,1,0,0,0,1,.79l.21,0a1,1,0,0,0,.77-1.19Zm1.34-87.06a1,1,0,1,1-.42,2S136,5.35,136,5.32a1,1,0,0,1,.61-1.9M165.24,135.5l-12.07-2.56a1,1,0,0,0-.62,1.89l.2.07,12.07,2.56a1,1,0,1,0,.42-2ZM178.19,14.25a.66.66,0,0,0,.2.06l12.07,2.57a1,1,0,0,0,1.18-.78,1,1,0,0,0-.77-1.18l-12.06-2.57a1,1,0,0,0-.62,1.9ZM154.06,9.12a.66.66,0,0,0,.2.06l12.07,2.57a1,1,0,0,0,.41-2L154.68,7.22a1,1,0,0,0-.62,1.9Zm48.26,10.26a1.52,1.52,0,0,0,.2.06L214.59,22a1,1,0,0,0,1.19-.77A1,1,0,0,0,215,20l-12.07-2.56a1,1,0,0,0-.62,1.9ZM224.75,67.2a1,1,0,0,0-2-.42l-2.57,12.09a1,1,0,0,0,.57,1.13.66.66,0,0,0,.2.06,1,1,0,0,0,1.19-.77Zm-5.29,24.17a1,1,0,1,0-2-.41l-2.57,12.09a1,1,0,0,0,.57,1.12l.2.07a1,1,0,0,0,1.18-.78Zm5.9-36.68a1,1,0,0,0,.57,1.13,1.52,1.52,0,0,0,.2.06,1,1,0,0,0,1.19-.77L229.89,43a1,1,0,0,0-2-.42Zm-36,85.94-12.07-2.57a1,1,0,0,0-1.18.78,1,1,0,0,0,.57,1.12l.2.07L189,142.59a1,1,0,0,0,.42-2Zm20-.88a1,1,0,0,0-.77-1.19,1,1,0,0,0-1.19.77,5,5,0,0,1-5.94,3.86,1,1,0,0,0-1.18.77,1,1,0,0,0,.57,1.13.66.66,0,0,0,.2.06A7,7,0,0,0,209.33,139.75ZM226.66,24.57a5,5,0,0,1,3.84,5.94,1,1,0,0,0,.58,1.12l.19.07a1,1,0,0,0,1.19-.77,7,7,0,0,0-5.39-8.32,1,1,0,0,0-.41,2ZM214.16,116a1,1,0,0,0-2-.42l-2.57,12.09a1,1,0,0,0,.57,1.13,1.52,1.52,0,0,0,.2.06,1,1,0,0,0,1.19-.77Z"/>
+    </symbol>
+    
+     <symbol id="eraser" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"></path><path d="M22 21H7"></path><path d="m5 11 9 9"></path>
+    </symbol>
+    
+    
+    <!-- Inline editor: advanced options menu -->
+
+    <symbol id="enter" viewBox="0 0 11 13">
+        <path d="M11,1V8a1,1,0,0,1-1,1H3.41l2.3,2.29a1,1,0,0,1,0,1.42,1,1,0,0,1-1.42,0l-4-4a1,1,0,0,1,0-1.42l4-4A1,1,0,0,1,5.71,4.71L3.41,7H9V1a1,1,0,0,1,2,0Z"/>
+    </symbol>
+
+    <symbol id="down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>
+    </symbol>
+
+    <symbol id="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline>
+    </symbol>
+
+    <symbol id="trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>
+    </symbol>
+    
+    <symbol id="open-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3,6H21" transform="matrix(0.966, -0.259, 0.259, 0.966, -0.626, 3.242)" />
+      <path d="M19,6v9.625C19,16.313,18,17,17,17H7c-1,0-2-.687-2-1.375V6" transform="translate(0 5)" />
+      <path d="M8,6V4a2.151,2.151,0,0,1,2-2h4a2.151,2.151,0,0,1,2,2V6" transform="matrix(0.966, -0.259, 0.259, 0.966, -0.626, 3.242)" />
+      <line y2="6" transform="translate(10 11)" />
+      <line y2="6" transform="translate(14 11)" />
+    </symbol>
+
+    <symbol id="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle>
+    </symbol>
+    
+    <symbol id="duplicate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+    </symbol>
+
+ <!-- Bulk edition pabel -->
+
+    <symbol id="open-bulk-edition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>
+    </symbol>
+   
+
+</svg>

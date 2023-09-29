@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>{{siteName}}</title>
+    <link href="{{siteDomain}}/feed.xml" rel="self" />
+    <link href="{{siteDomain}}" />
+    <updated>{{date siteLastUpdate "YYYY-MM-DDTHH:mm:ssZ"}}</updated>
+    <author>
+        {{#siteAuthor}}
+        <name>{{name}}</name>
+        {{/siteAuthor}}
+    </author>
+    <id>{{siteDomain}}</id>
+
+    {{#each posts}}
+    <entry>
+        <title>{{title}}</title>
+        <author>
+            {{#author}}
+            <name>{{name}}</name>
+            {{/author}}
+        </author>
+        <link href="{{url}}"/>
+        <id>{{url}}</id>
+        {{#if thumbnail}}
+        <media:content url="{{thumbnail.url}}" medium="image" />
+        {{/if}}
+        {{#each categories}}
+            <category term="{{name}}"/>
+        {{/each}}
+
+        <updated>{{date modifiedAt "YYYY-MM-DDTHH:mm:ssZ"}}</updated>
+        {{#if excerpt}}
+            <summary>
+                <![CDATA[
+                    {{#if thumbnail}}
+                        <img src="{{thumbnail.url}}" alt="{{thumbnail.alt}}" />
+                    {{/if}}
+                    {{{excerpt}}}
+                ]]>
+            </summary>
+        {{else}}
+            <summary></summary>
+        {{/if}}
+        {{#if text}}
+        <content type="html">
+            <![CDATA[
+                {{#if thumbnail}}
+                    <p><img src="{{thumbnail.url}}" class="type:primaryImage" alt="{{thumbnail.alt}}" /></p>
+                {{/if}}
+                {{{text}}}
+            ]]>
+        </content>
+        {{else}}
+        <content></content>
+        {{/if}}
+    </entry>
+    {{/each}}
+</feed>

@@ -1,0 +1,50 @@
+{
+    "electron": {
+        "url": "https://electronjs.org/"
+    },
+    "normalize.css": {
+        "url": "https://github.com/necolas/normalize.css"
+    },
+    "locutus": {
+        "url": "http://locutus.io/"
+    },
+    "codemirror": {
+        "url": "https://codemirror.net/"
+    },
+    "tinycolorpicker": {
+        "url": "http://www.dematte.at/tinyColorPicker/"
+    },
+    "tinymce": {
+        "url": "https://www.tiny.cloud/"
+    },
+    "libvips": {
+        "url": "https://github.com/jcupitt/libvips"
+    },
+    "handlebars": {
+        "url": "http://handlebarsjs.com/"
+    },
+    "jquery": {
+        "url": "http://jquery.com/"
+    },
+    "jquery-ui": {
+        "url": "https://jqueryui.com/"
+    },
+    "nested-sortable": {
+        "url": "https://github.com/ilikenwf/nestedSortable"
+    },
+    "select2": {
+        "url": "https://select2.github.io/"
+    },
+    "node-slug": {
+        "url": "https://github.com/dodo/node-slug"
+    },
+    "feathericons": {
+        "url": "https://feathericons.com"
+    },
+    "tabler-icons": {
+        "url": "https://tabler-icons.io/"
+    },
+    "lucide": {
+        "url": "https://lucide.dev/"
+    }
+}
