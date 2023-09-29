@@ -50,6 +50,7 @@ import PubliiCode from './default-blocks/publii-code/block.vue';
 import PubliiHeader from './default-blocks/publii-header/block.vue';
 import PubliiHtml from './default-blocks/publii-html/block.vue';
 import PubliiImage from './default-blocks/publii-image/block.vue';
+import PubliiImageWithText from './default-blocks/publii-image-with-text/block.vue';
 import PubliiGallery from './default-blocks/publii-gallery/block.vue';
 import PubliiList from './default-blocks/publii-list/block.vue';
 import PubliiParagraph from './default-blocks/publii-paragraph/block.vue';
@@ -75,6 +76,7 @@ export default {
     'publii-header': PubliiHeader,
     'publii-html': PubliiHtml,
     'publii-image': PubliiImage,
+    'publii-image-with-text': PubliiImageWithText,
     'publii-gallery': PubliiGallery,
     'publii-list': PubliiList,
     'publii-paragraph': PubliiParagraph,

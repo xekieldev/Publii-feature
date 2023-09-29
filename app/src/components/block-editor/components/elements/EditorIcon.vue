@@ -33,6 +33,7 @@ export default {
         case 'add': return 18;
         case 'headings': return 18;
         case 'image': return 18;
+        case 'image-with-text': return 18;
         case 'gallery': return 26;
         case 'unordered-list': return 18;
         case 'quote': return 16;
@@ -96,6 +97,7 @@ export default {
         case 'add': return 18;
         case 'headings': return 18;
         case 'image': return 18;
+        case 'image-with-text': return 18;
         case 'gallery': return 18;
         case 'unordered-list': return 18;
         case 'quote': return 16;

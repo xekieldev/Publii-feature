@@ -15,6 +15,11 @@
         "label": "image.image"
     },
     {
+        "blockName": "publii-image-with-text",
+        "icon": "image",
+        "label": "editor.image-with-text"
+    },
+    {
         "blockName": "publii-gallery",
         "icon": "gallery",
         "label": "editor.gallery"
