@@ -41,7 +41,7 @@ function render (blockData) {
       </a>
       
     </figure> 
-    <div style="flex-direction: column;">
+    <div class="prueba" style="flex-direction: column;">
       ${captionTitle}
       ${caption}
     </div>`;
@@ -51,7 +51,7 @@ function render (blockData) {
       <img src="${blockData.content.image}" height="${blockData.content.imageHeight}" width="${blockData.content.imageWidth}" alt="${blockData.content.alt}" />
       
     </figure> 
-    <div style="flex-direction: column;">
+    <div class="prueba" style="flex-direction: column;">
       ${captionTitle}
       ${caption}
     </div>`;

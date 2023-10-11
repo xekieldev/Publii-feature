@@ -38,7 +38,9 @@ electronApp.on('ready', function () {
     };
 
     appInstance = new App(startupSettings);
-    
+    const ret = electron.globalShortcut.register('F11', () => {
+        appInstance.mainWindow.webContents.openDevTools()
+    });
     ipcMain.on('publii-set-spellchecker-language', (event, language) => {
         global.spellCheckerLanguage = new String(language).replace(/[^a-z\-_]/gmi, '');
     });

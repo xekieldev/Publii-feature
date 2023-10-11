@@ -89,7 +89,7 @@
         @keyup="handleCaretCaption"
         @click.stop
         v-model="content.caption"
-        :placeholder="$t('image.enterCaption')"
+        :placeholder="$t('image.enterDescription')"
         ref="contentCaption" />
       <input
         v-if="$parent.uiOpened"
@@ -356,7 +356,7 @@ export default {
         e.returnValue = false;
       }
 
-      if (e.code === 'Backspace' && this.$refs['contentCaption'].value === '' && this.$refs['contentAlt'].value === '') {
+      if (e.code === 'Backspace' && this.$refs['contentCaptionTitle'].value === '' && this.$refs['contentAlt'].value === '') {
         this.$bus.$emit('block-editor-delete-block', this.id);
         e.returnValue = false;
       }
@@ -368,7 +368,8 @@ export default {
       }
 
       if (e.code === 'Backspace' && this.$refs['contentCaption'].value === '' && this.$refs['contentAlt'].value === '') {
-        this.$bus.$emit('block-editor-delete-block', this.id);
+        this.$refs['contentCaptionTitle'].focus();
+        // this.$bus.$emit('block-editor-delete-block', this.id);
         e.returnValue = false;
       }
     },
@@ -378,7 +379,7 @@ export default {
         e.returnValue = false;
       }
 
-      if (e.code === 'Backspace' && this.$refs['contentCaption'].value === '') {
+      if (e.code === 'Backspace' && this.$refs['contentAlt'].value === '') {
         this.$refs['contentCaption'].focus();
         e.returnValue = false;
       }
