@@ -70,37 +70,39 @@
             class="publii-block-image-uploader-loader"></span>
         </div>
       </div>
-
-      <input
-        v-if="$parent.uiOpened"
-        type="text"
-        @focus="updateCurrentBlockID"
-        @keydown="handleCaptionTitleKeyboard"
-        @keyup="handleCaretCaptionTitle"
-        @click.stop
-        v-model="content.captionTitle"
-        :placeholder="$t('image.enterCaptionTitle')"
-        ref="contentCaptionTitle" />
-      <input
-        v-if="$parent.uiOpened"
-        type="text"
-        @focus="updateCurrentBlockID"
-        @keydown="handleCaptionKeyboard"
-        @keyup="handleCaretCaption"
-        @click.stop
-        v-model="content.caption"
-        :placeholder="$t('image.enterDescription')"
-        ref="contentCaption" />
-      <input
-        v-if="$parent.uiOpened"
-        type="text"
-        @focus="updateCurrentBlockID"
-        @keydown="handleAltKeyboard"
-        @keyup="handleCaretAlt"
-        @click.stop
-        v-model="content.alt"
-        :placeholder="$t('image.enterAltText')"
-        ref="contentAlt" />
+      <div class="image-description">
+        <input
+          v-if="$parent.uiOpened"
+          type="text"
+          @focus="updateCurrentBlockID"
+          @keydown="handleCaptionTitleKeyboard"
+          @keyup="handleCaretCaptionTitle"
+          @click.stop
+          v-model="content.captionTitle"
+          :placeholder="$t('image.enterCaptionTitle')"
+          ref="contentCaptionTitle" />
+        <input
+          v-if="$parent.uiOpened"
+          type="text"
+          @focus="updateCurrentBlockID"
+          @keydown="handleCaptionKeyboard"
+          @keyup="handleCaretCaption"
+          @click.stop
+          v-model="content.caption"
+          :placeholder="$t('image.enterDescription')"
+          ref="contentCaption" 
+          maxlength="350"/>
+        <input
+          v-if="$parent.uiOpened"
+          type="text"
+          @focus="updateCurrentBlockID"
+          @keydown="handleAltKeyboard"
+          @keyup="handleCaretAlt"
+          @click.stop
+          v-model="content.alt"
+          :placeholder="$t('image.enterAltText')"
+          ref="contentAlt" />
+      </div>
     </div>
 
     <top-menu

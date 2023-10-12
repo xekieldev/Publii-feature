@@ -124,10 +124,18 @@
             }
         }
 
-        figcaption {
-            color: var(--text-light-color);
+
+        figcaptiontitle {
+            // color: var(--text-light-color);
             font-size: ms(-1);
-            text-align: center;
+            font-weight: bold;
+            // text-align: center;
+        }
+
+        figcaption {
+            // color: var(--text-light-color);
+            font-size: ms(-1);
+            // text-align: center;
         }
         
         label {

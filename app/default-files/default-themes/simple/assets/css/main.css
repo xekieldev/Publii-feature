@@ -307,13 +307,19 @@ table td {
   background: var(--lighter);
 }
 
+figcaptiontitle {
+  font-size: 0.7241964329rem;
+  font-weight: bold;
+  text-align: start;
+}
+
 figcaption {
   clear: both;
   color: gray-2;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 0.7241964329rem;
   margin: 0.85rem 0 0;
-  text-align: center;
+  text-align: start;
 }
 
 kbd {
