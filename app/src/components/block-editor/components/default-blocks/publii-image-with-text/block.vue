@@ -29,9 +29,9 @@
         </span>
       </button>
 
-      <figcaptiontitle v-if="content.captionTitle !== '' && view === 'preview'">
-        {{ content.captionTitle }}
-      </figcaptiontitle>
+      <figtitle v-if="content.title !== '' && view === 'preview'">
+        {{ content.title }}
+      </figtitle>
       <figcaption v-if="content.caption !== '' && view === 'preview'">
         {{ content.caption }}
       </figcaption>
@@ -75,12 +75,12 @@
           v-if="$parent.uiOpened"
           type="text"
           @focus="updateCurrentBlockID"
-          @keydown="handleCaptionTitleKeyboard"
-          @keyup="handleCaretCaptionTitle"
+          @keydown="handleTitleKeyboard"
+          @keyup="handleCaretTitle"
           @click.stop
-          v-model="content.captionTitle"
-          :placeholder="$t('image.enterCaptionTitle')"
-          ref="contentCaptionTitle" />
+          v-model="content.title"
+          :placeholder="$t('image.enterTitle')"
+          ref="contentTitle" />
         <input
           v-if="$parent.uiOpened"
           type="text"
@@ -136,8 +136,8 @@ export default {
   },
   data () {
     return {
-      caretIsAtStartCaptionTitle: false,
-      caretIsAtEndCaptionTitle: false,
+      caretIsAtStartTitle: false,
+      caretIsAtEndTitle: false,
       caretIsAtStartCaption: false,
       caretIsAtEndCaption: false,
       caretIsAtStartAlt: false,
@@ -164,7 +164,7 @@ export default {
         imageHeight: '',
         imageWidth: '',
         alt: '',
-        captionTitle: '',
+        title: '',
         caption: ''
       },
       topMenuConfig: [
@@ -352,13 +352,13 @@ export default {
     focus () {
       this.setView('code');
     },
-    handleCaptionTitleKeyboard (e) {
+    handleTitleKeyboard (e) {
       if (e.code === 'Enter' && !e.isComposing && e.shiftKey === false) {
         this.$refs['contentAlt'].focus();
         e.returnValue = false;
       }
 
-      if (e.code === 'Backspace' && this.$refs['contentCaptionTitle'].value === '' && this.$refs['contentAlt'].value === '') {
+      if (e.code === 'Backspace' && this.$refs['contentTitle'].value === '' && this.$refs['contentAlt'].value === '') {
         this.$bus.$emit('block-editor-delete-block', this.id);
         e.returnValue = false;
       }
@@ -370,7 +370,7 @@ export default {
       }
 
       if (e.code === 'Backspace' && this.$refs['contentCaption'].value === '' && this.$refs['contentAlt'].value === '') {
-        this.$refs['contentCaptionTitle'].focus();
+        this.$refs['contentTitle'].focus();
         // this.$bus.$emit('block-editor-delete-block', this.id);
         e.returnValue = false;
       }
@@ -386,10 +386,10 @@ export default {
         e.returnValue = false;
       }
     },
-    handleCaretCaptionTitle (e) {
-      if (e.code === 'ArrowUp' && this.getCursorPosition('contentCaptionTitle') === 0) {
-        if (!this.caretIsAtStartCaptionTitle) {
-          this.caretIsAtStartCaptionTitle = true;
+    handleCaretTitle (e) {
+      if (e.code === 'ArrowUp' && this.getCursorPosition('contentTitle') === 0) {
+        if (!this.caretIsAtStartTitle) {
+          this.caretIsAtStartTitle = true;
           return;
         }
 
@@ -401,9 +401,9 @@ export default {
         }
       }
 
-      if (e.code === 'ArrowDown' && this.getCursorPosition('contentCaptionTitle') >= this.$refs['contentCaptionTitle'].value.length - 2) {
-        if (!this.caretIsAtEndCaptionTitle) {
-          this.caretIsAtEndCaptionTitle = true;
+      if (e.code === 'ArrowDown' && this.getCursorPosition('contentTitle') >= this.$refs['contentTitle'].value.length - 2) {
+        if (!this.caretIsAtEndTitle) {
+          this.caretIsAtEndTitle = true;
           return;
         }
 
@@ -412,8 +412,8 @@ export default {
       }
 
       if (e.code === 'ArrowDown' || e.code === 'ArrowUp') {
-        this.caretIsAtStartCaptionTitle = false;
-        this.caretIsAtEndCaptionTitle = false;
+        this.caretIsAtStartTitle = false;
+        this.caretIsAtEndTitle = false;
       }
     },
     handleCaretCaption (e) {
@@ -481,8 +481,8 @@ export default {
         this.content.alt = this.$refs['contentAlt'].value;
       }
 
-      if (this.$refs['contentCaptionTitle']) {
-        this.content.captionTitle = this.$refs['contentCaptionTitle'].value;
+      if (this.$refs['contentTitle']) {
+        this.content.title = this.$refs['contentitle'].value;
       }
 
       if (this.$refs['contentCaption']) {
@@ -529,7 +529,7 @@ export default {
     transition: all .25s ease-out;
   }
 
-  & > figcaptiontitle {
+  & > figtitle {
     display: block;
     padding: baseline(3,em) 0 0;
   }
