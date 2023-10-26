@@ -307,10 +307,24 @@ table td {
   background: var(--lighter);
 }
 
+.image-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
 figtitle {
-  font-size: 0.7241964329rem;
+  font-size: 0.8241964329rem;
   font-weight: bold;
+  /* margin: 0.85rem 0 0; */
   text-align: start;
+}
+
+figdescription {
+  display: block;
+  font-size: 0.7241964329rem;
+  margin: 0.85rem 0 0;
+  text-align: justify;
 }
 
 figcaption {
@@ -1381,6 +1395,18 @@ textarea {
   right: var(--page-margin);
   z-index: 3;
 }
+.hero__image > figdescription {
+  background: var(--page-bg);
+  border-radius: calc(4 * var(--border-radius));
+  bottom: 1rem;
+  color: var(--text-color);
+  display: block;
+  padding: 0 0.34rem;
+  position: absolute;
+  text-align: right;
+  right: var(--page-margin);
+  z-index: 3;
+}
 
 .feed__item {
   margin-top: calc(2.55rem + 1.5vw);
@@ -1457,6 +1483,14 @@ textarea {
 }
 .feed--grid-tag-desc > :nth-child(1) {
   margin-top: 0;
+}
+
+.post__image-with-text {
+  display: flex;
+}
+.post__image-with-text > img {
+  display: flex;
+  max-width: 300px;
 }
 
 .post__image {

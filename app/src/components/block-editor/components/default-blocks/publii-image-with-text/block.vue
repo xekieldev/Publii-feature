@@ -1,11 +1,11 @@
 <template>
   <div 
-    :class="{ 'publii-block-image-wrapper': true, 'is-empty': isEmpty }"
+    :class="{ 'publii-block-image-with-text-wrapper': true, 'is-empty': isEmpty }"
     @click="resetDeleteConfirmation">
     <figure
       v-if="view === 'preview' || content.image !== ''"
       ref="block"
-      :class="{ 'publii-block-image': true, 'is-wide': config.imageAlign === 'wide', 'is-full': config.imageAlign === 'full' }">
+      :class="{ 'publii-block-image-with-text': true, 'is-wide': config.imageAlign === 'wide', 'is-full': config.imageAlign === 'full' }">
       <img
         v-if="!!content.image"
         :src="content.image"
@@ -14,14 +14,14 @@
 
       <button
         v-if="!!content.image && !confirmDelete"
-        class="publii-block-image-delete"
+        class="publii-block-image-with-text-delete"
         @click.stop.prevent="clearImage()">
         <icon name="trash" />
       </button>
 
       <button
         v-if="!!content.image && confirmDelete"
-        class="publii-block-image-delete is-active has-tooltip"
+        class="publii-block-image-with-text-delete is-active has-tooltip"
         @click.stop.prevent="clearImage()">
         <icon name="open-trash" />
         <span class="ui-tooltip has-bigger-space">
@@ -32,18 +32,18 @@
       <figtitle v-if="content.title !== '' && view === 'preview'">
         {{ content.title }}
       </figtitle>
-      <figcaption v-if="content.caption !== '' && view === 'preview'">
-        {{ content.caption }}
-      </figcaption>
+      <figdescription v-if="content.description !== '' && view === 'preview'">
+        {{ content.description }}
+      </figdescription>
     </figure>
 
     <div
       v-if="(content.image === '') || $parent.uiOpened"
-      :class="{ 'publii-block-image-form': true, 'is-visible': true }"
+      :class="{ 'publii-block-image-with-text-form': true, 'is-visible': true }"
       ref="block">
       <div
         v-if="content.image === ''"
-        :class="{ 'publii-block-image-uploader': true, 'is-hovered': isHovered }"
+        :class="{ 'publii-block-image-with-text-uploader': true, 'is-hovered': isHovered }"
         @drag.stop.prevent
         @dragstart.stop.prevent
         @dragend.stop.prevent
@@ -51,7 +51,7 @@
         @dragenter.stop.prevent
         @dragleave.stop.prevent="dragLeave"
         @drop.stop.prevent="drop">
-        <div class="publii-block-image-uploader-inner">
+        <div class="publii-block-image-with-text-uploader-inner">
           <icon
             v-if="!imageUploadInProgress"
             name="blank-image"
@@ -67,10 +67,10 @@
           </button>
           <span
             v-if="imageUploadInProgress"
-            class="publii-block-image-uploader-loader"></span>
+            class="publii-block-image-with-text- uploader-loader"></span>
         </div>
       </div>
-      <div class="image-description">
+      <!-- <div class="image-description"> -->
         <input
           v-if="$parent.uiOpened"
           type="text"
@@ -85,12 +85,12 @@
           v-if="$parent.uiOpened"
           type="text"
           @focus="updateCurrentBlockID"
-          @keydown="handleCaptionKeyboard"
-          @keyup="handleCaretCaption"
+          @keydown="handleDescriptionKeyboard"
+          @keyup="handleCaretDescription"
           @click.stop
-          v-model="content.caption"
+          v-model="content.description"
           :placeholder="$t('image.enterDescription')"
-          ref="contentCaption" 
+          ref="contentDescription" 
           maxlength="350"/>
         <input
           v-if="$parent.uiOpened"
@@ -102,7 +102,7 @@
           v-model="content.alt"
           :placeholder="$t('image.enterAltText')"
           ref="contentAlt" />
-      </div>
+      <!-- </div> -->
     </div>
 
     <top-menu
@@ -138,8 +138,8 @@ export default {
     return {
       caretIsAtStartTitle: false,
       caretIsAtEndTitle: false,
-      caretIsAtStartCaption: false,
-      caretIsAtEndCaption: false,
+      caretIsAtStartDescription: false,
+      caretIsAtEndDescription: false,
       caretIsAtStartAlt: false,
       caretIsAtEndAlt: false,
       confirmDelete: false,
@@ -165,7 +165,7 @@ export default {
         imageWidth: '',
         alt: '',
         title: '',
-        caption: ''
+        description: ''
       },
       topMenuConfig: [
         {
@@ -354,7 +354,7 @@ export default {
     },
     handleTitleKeyboard (e) {
       if (e.code === 'Enter' && !e.isComposing && e.shiftKey === false) {
-        this.$refs['contentAlt'].focus();
+        this.$refs['contentDescription'].focus();
         e.returnValue = false;
       }
 
@@ -363,13 +363,13 @@ export default {
         e.returnValue = false;
       }
     },
-    handleCaptionKeyboard (e) {
+    handleDescriptionKeyboard (e) {
       if (e.code === 'Enter' && !e.isComposing && e.shiftKey === false) {
         this.$refs['contentAlt'].focus();
         e.returnValue = false;
       }
 
-      if (e.code === 'Backspace' && this.$refs['contentCaption'].value === '' && this.$refs['contentAlt'].value === '') {
+      if (e.code === 'Backspace' && this.$refs['contentDescription'].value === '' && this.$refs['contentAlt'].value === '') {
         this.$refs['contentTitle'].focus();
         // this.$bus.$emit('block-editor-delete-block', this.id);
         e.returnValue = false;
@@ -382,7 +382,7 @@ export default {
       }
 
       if (e.code === 'Backspace' && this.$refs['contentAlt'].value === '') {
-        this.$refs['contentCaption'].focus();
+        this.$refs['contentDescription'].focus();
         e.returnValue = false;
       }
     },
@@ -416,10 +416,10 @@ export default {
         this.caretIsAtEndTitle = false;
       }
     },
-    handleCaretCaption (e) {
-      if (e.code === 'ArrowUp' && this.getCursorPosition('contentCaption') === 0) {
-        if (!this.caretIsAtStartCaption) {
-          this.caretIsAtStartCaption = true;
+    handleCaretDescription (e) {
+      if (e.code === 'ArrowUp' && this.getCursorPosition('contentDescription') === 0) {
+        if (!this.caretIsAtStartDescription) {
+          this.caretIsAtStartDescription = true;
           return;
         }
 
@@ -431,9 +431,9 @@ export default {
         }
       }
 
-      if (e.code === 'ArrowDown' && this.getCursorPosition('contentCaption') >= this.$refs['contentCaption'].value.length - 2) {
-        if (!this.caretIsAtEndCaption) {
-          this.caretIsAtEndCaption = true;
+      if (e.code === 'ArrowDown' && this.getCursorPosition('contentDescription') >= this.$refs['contentDescription'].value.length - 2) {
+        if (!this.caretIsAtEndDescription) {
+          this.caretIsAtEndDescription = true;
           return;
         }
 
@@ -442,8 +442,8 @@ export default {
       }
 
       if (e.code === 'ArrowDown' || e.code === 'ArrowUp') {
-        this.caretIsAtStartCaption = false;
-        this.caretIsAtEndCaption = false;
+        this.caretIsAtStartDescription = false;
+        this.caretIsAtEndDescription = false;
       }
     },
     handleCaretAlt (e) {
@@ -453,7 +453,7 @@ export default {
           return;
         }
 
-        this.$refs['contentCaption'].focus();
+        this.$refs['contentDescription'].focus();
         e.returnValue = false;
       }
 
@@ -482,11 +482,11 @@ export default {
       }
 
       if (this.$refs['contentTitle']) {
-        this.content.title = this.$refs['contentitle'].value;
+        this.content.title = this.$refs['contenTitle'].value;
       }
 
-      if (this.$refs['contentCaption']) {
-        this.content.caption = this.$refs['contentCaption'].value;
+      if (this.$refs['contentDescription']) {
+        this.content.description = this.$refs['contentDescription'].value;
       }
 
       this.$bus.$emit('block-editor-save-block', {
@@ -510,12 +510,12 @@ export default {
 @import '../../../../../scss/variables.scss';
 @import '../../../../../scss/mixins.scss';
 
-.publii-block-image {
+.publii-block-image-with-text {
   outline: none;
   position: relative;
 
   &:hover {
-    .publii-block-image-delete {
+    .publii-block-image-with-text-delete {
       opacity: 1;
       pointer-events: auto;
     }
@@ -534,7 +534,7 @@ export default {
     padding: baseline(3,em) 0 0;
   }
 
-  & > figcaption {
+  & > figdescription {
     display: block;
     padding: baseline(3,em) 0 0;
   }
