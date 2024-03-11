@@ -1,3 +1,9 @@
+# New feature for the Block Editor of the Publii CMS
+
+This repository contains a new feature for the Block Editor of the Publii CMS. The added feature introduces a new block type called 'Image with Text', which enables users to create blocks containing both an image and its description.
+
+
+
 # Publii - Static CMS for privacy-focused, SEO-optimized websites.
 
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/GetPublii/Publii/blob/master/LICENSE)
